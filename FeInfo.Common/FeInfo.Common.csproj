@@ -7,6 +7,19 @@
     <PackageId>FeInfo.Common</PackageId>
     <Version>1.0.0</Version>
     <Authors>antidale</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Title>Free Enterprise Info</Title>
+    <Description>A collection of classes, records, and enums for Free Enterprise community projects</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Antidale/FeInfo.Common</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
