@@ -7,11 +7,13 @@
     /// <param name="RegistrantCount">The nummber of currently registered particpants</param>
     /// <param name="TrackingChannelId"></param>
     /// <param name="TrackingMessageId"></param>
-    /// <param name="TournamentRoleId">The role that should be</param>
+    /// <param name="TournamentRoleId">The role that should be applied to/removed from the user</param>
+    /// <param name="TournamentName">The name of the tournament</param>
     public record ChangeRegistrationResponse(
         int RegistrantCount, 
         ulong TrackingChannelId, 
         ulong TrackingMessageId, 
-        ulong TournamentRoleId
+        ulong TournamentRoleId,
+        string TournamentName
     ) { }
 }
