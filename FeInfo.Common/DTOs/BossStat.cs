@@ -22,6 +22,6 @@
         public int MinSpeed { get; init; }
         public int MaxSpeed { get; init; }
         public int SpellPower { get; init; }
-        public string Notes { get; init; } = string.Empty;
+        public List<string> Notes { get; init; } = [];
     }
 }
