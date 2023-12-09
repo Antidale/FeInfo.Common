@@ -1,4 +1,4 @@
-using FeInfo.Common.Emums;
+using FeInfo.Common.Enums;
 
 namespace FeInfo.Common.Responses
 {

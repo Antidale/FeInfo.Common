@@ -1,4 +1,4 @@
-﻿namespace FeInfo.Common.Emums
+﻿namespace FeInfo.Common.Enums
 {
     public enum RegistrationStatus
     {
