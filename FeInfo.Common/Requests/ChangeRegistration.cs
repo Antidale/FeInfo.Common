@@ -5,8 +5,9 @@ namespace FeInfo.Common.Requests
     /// <summary>
     /// Record for changing the registration status of a player.
     /// </summary>
-    /// <param name="UserId"></param>
-    /// <param name="UserName"></param>
+    /// <param name="UserId">The registrant's discord Id</param>
+    /// <param name="UserName">the registrant's discord user name</param>
+    /// <param name="TwitchName">The registrant's twitch name</param>
     /// <param name="GuildId">The id of the guild (server) where the tournament is being hosted</param>
     /// <param name="TournamentName">Used to disambiguate when there are multiple tournaments you could be registering for</param>
     /// <param name="Alias">Used to allow players to specify a name on any restreams. Not used when dropping from a tournament</param>
@@ -16,9 +17,10 @@ namespace FeInfo.Common.Requests
     ///     <para>Not used when dropping from a tournament</para>
     /// </param>
     public record ChangeRegistration(
-        ulong UserId,  
-        string UserName, 
-        ulong GuildId, 
+        ulong UserId,
+        string UserName,
+        ulong GuildId,
+        string TwitchName,
         string TournamentName = "",
         string Alias = "",
         string Pronouns = "",
