@@ -18,6 +18,7 @@
         ulong TrackingChannelId,
         ulong TrackingMessageId,
         ulong RegistrantRoleId,
+        string? RulesLink,
         DateTimeOffset? RegistrationStart,
         DateTimeOffset? RegistrationEnd
     )
