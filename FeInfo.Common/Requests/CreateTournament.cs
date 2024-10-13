@@ -19,6 +19,7 @@
         ulong TrackingMessageId,
         ulong RegistrantRoleId,
         string? RulesLink,
+        string? StandingsLink,
         DateTimeOffset? RegistrationStart,
         DateTimeOffset? RegistrationEnd
     )
