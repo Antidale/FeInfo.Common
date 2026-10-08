@@ -14,7 +14,7 @@ public static class FlagsetComparer
         var twoTokens = flagsetTwo.Split(' ');
         if (oneTokens != twoTokens && ((oneTokens.Length == 1 && twoTokens.Length != 1) || (oneTokens.Length != 1 && twoTokens.Length == 1)))
         {
-            discrepancies.Add("Cannot compare full flagstring and an encoded representation");
+            discrepancies.Add(Constants.FLAG_TYPE_MISMATCH);
             return false;
         }
 
@@ -51,5 +51,16 @@ public static class FlagsetComparer
 
 
         return builder.ToString();
+    }
+
+    private static List<string> GetFullStringDiff(string first, string second)
+    {
+        var diffStrings = new List<string>();
+        var firstGroups = first.Split(' ').GroupBy(x => x.First()).OrderBy(x => x.Key);
+        var secondGroups = second.Split(' ').GroupBy(x => x.First()).OrderBy(x => x.Key);
+
+        //probably want to handle each group type a little differently?
+
+        return diffStrings;
     }
 }

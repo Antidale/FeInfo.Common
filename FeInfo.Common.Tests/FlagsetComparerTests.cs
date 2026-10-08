@@ -27,6 +27,7 @@ public class UnitTest1
 
         Assert.False(result);
         Assert.Single(discrepancies);
+        Assert.Equal(Constants.FLAG_TYPE_MISMATCH, discrepancies.First());
     }
 
     [Theory]
@@ -58,5 +59,4 @@ public class UnitTest1
         Assert.True(result);
         Assert.Empty(discrepancies);
     }
-
 }
